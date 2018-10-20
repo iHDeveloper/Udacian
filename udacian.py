@@ -15,5 +15,5 @@ class Udacian:
             self.status
         )
 
-udacian = Udacian('Mohammed', 'Riyadh', [ 'Sat am', 'Ms. Lujuain' ], 'FSND', 'on track')
+udacian = Udacian('Mohammed', 'Riyadh', ( 'Sat am', 'Ms. Lujuain' ), 'FSND', 'on tracking')
 print(udacian)
