@@ -6,14 +6,16 @@ class Udacian:
         self.nanodegree = nanodegree
         self.status = status
     def __str__(self):
-        return "{} is enrolled in {} studying {} in {} with {}, he/she is {}".format(
+        return "{} is enrolled in {} studying {} in {} {} with {}, he/she is {}".format(
             self.name,
             self.city,
             self.nanodegree,
             self.enrollment[0],
             self.enrollment[1],
+            self.enrollment[2],
             self.status
         )
 
-udacian = Udacian('Mohammed', 'Riyadh', ( 'Sat am', 'Ms. Lujuain' ), 'FSND', 'on tracking')
+enrollment = ( 'Sat', 'am', 'Ms. Lujuain' )
+udacian = Udacian('Mohammed', 'Riyadh', enrollment, 'FSND', 'on tracking')
 print(udacian)
