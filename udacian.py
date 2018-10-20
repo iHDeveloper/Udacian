@@ -46,7 +46,7 @@ class HTTPHandler(BaseHTTPRequestHandler):
         name = params["name"][0]
         city = params["city"][0]
         enrollment = params["enrollment"][0].split(" ")
-        enrollment = ( enrollment[0], enrollment[1], enrollment[2] )
+        enrollment = tuple(enrollment)
         nanodegree = params["nanodegree"][0]
         status = params["status"][0]
         udacian = Udacian(name, city, enrollment, nanodegree, status)
